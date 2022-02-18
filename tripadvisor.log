@@ -1,0 +1,143 @@
+----------------------------------------ARGUMENTS----------------------------------------
+data_path                                ../TripAdvisor/reviews.pickle
+index_dir                                ../TripAdvisor/1/
+emsize                                   300
+nhid                                     400
+nlayers                                  4
+lr                                       0.0001
+epochs                                   100
+batch_size                               200
+cuda                                     True
+checkpoint                               ./tripadvisor/
+outf                                     generated.txt
+vocab_size                               20000
+endure_times                             5
+l2_reg                                   0
+text_reg                                 1.0
+rating_reg                               1.0
+words                                    15
+----------------------------------------ARGUMENTS----------------------------------------
+[2022-02-17 21:23:14.161364]: Loading data
+[2022-02-17 21:23:30.477096]: epoch 1
+[2022-02-17 21:24:40.270933]: text ppl 359.6655 | rating loss 0.9331 | total loss 6.8183 on train
+[2022-02-17 21:24:42.467596]: text ppl 185.7268 | rating loss 0.8255 | total loss 6.0498 on validation
+[2022-02-17 21:24:42.774214]: epoch 2
+[2022-02-17 21:25:52.957810]: text ppl 142.5173 | rating loss 0.8205 | total loss 5.7800 on train
+[2022-02-17 21:25:55.164592]: text ppl 120.8773 | rating loss 0.8221 | total loss 5.6168 on validation
+[2022-02-17 21:25:55.470435]: epoch 3
+[2022-02-17 21:27:05.477051]: text ppl 106.3113 | rating loss 0.7943 | total loss 5.4606 on train
+[2022-02-17 21:27:07.678126]: text ppl 99.5933 | rating loss 0.6827 | total loss 5.2838 on validation
+[2022-02-17 21:27:08.042688]: epoch 4
+[2022-02-17 21:28:17.987032]: text ppl 89.7633 | rating loss 0.6240 | total loss 5.1212 on train
+[2022-02-17 21:28:20.186116]: text ppl 87.5289 | rating loss 0.6457 | total loss 5.1177 on validation
+[2022-02-17 21:28:20.498929]: epoch 5
+[2022-02-17 21:29:30.403501]: text ppl 79.1480 | rating loss 0.5857 | total loss 4.9570 on train
+[2022-02-17 21:29:32.596056]: text ppl 78.8828 | rating loss 0.6309 | total loss 4.9989 on validation
+[2022-02-17 21:29:32.910685]: epoch 6
+[2022-02-17 21:30:44.175582]: text ppl 71.3647 | rating loss 0.5774 | total loss 4.8452 on train
+[2022-02-17 21:30:46.440142]: text ppl 72.6380 | rating loss 0.6272 | total loss 4.9127 on validation
+[2022-02-17 21:30:46.746869]: epoch 7
+[2022-02-17 21:31:58.892446]: text ppl 65.4538 | rating loss 0.5742 | total loss 4.7556 on train
+[2022-02-17 21:32:01.158582]: text ppl 67.9950 | rating loss 0.6231 | total loss 4.8425 on validation
+[2022-02-17 21:32:01.472659]: epoch 8
+[2022-02-17 21:33:13.634069]: text ppl 60.8103 | rating loss 0.5715 | total loss 4.6792 on train
+[2022-02-17 21:33:15.880799]: text ppl 64.3247 | rating loss 0.6244 | total loss 4.7883 on validation
+[2022-02-17 21:33:16.200768]: epoch 9
+[2022-02-17 21:34:28.350096]: text ppl 57.0281 | rating loss 0.5701 | total loss 4.6137 on train
+[2022-02-17 21:34:30.602012]: text ppl 61.4672 | rating loss 0.6229 | total loss 4.7414 on validation
+[2022-02-17 21:34:30.910098]: epoch 10
+[2022-02-17 21:35:43.020270]: text ppl 53.8557 | rating loss 0.5698 | total loss 4.5561 on train
+[2022-02-17 21:35:45.265461]: text ppl 59.0891 | rating loss 0.6223 | total loss 4.7014 on validation
+[2022-02-17 21:35:45.570526]: epoch 11
+[2022-02-17 21:36:57.700344]: text ppl 51.1539 | rating loss 0.5682 | total loss 4.5030 on train
+[2022-02-17 21:36:59.957802]: text ppl 57.0925 | rating loss 0.6246 | total loss 4.6693 on validation
+[2022-02-17 21:37:00.261636]: epoch 12
+[2022-02-17 21:38:11.577585]: text ppl 48.8185 | rating loss 0.5670 | total loss 4.4551 on train
+[2022-02-17 21:38:13.791569]: text ppl 55.4898 | rating loss 0.6240 | total loss 4.6402 on validation
+[2022-02-17 21:38:14.105390]: epoch 13
+[2022-02-17 21:39:22.738083]: text ppl 46.7797 | rating loss 0.5667 | total loss 4.4121 on train
+[2022-02-17 21:39:24.934404]: text ppl 54.1370 | rating loss 0.6275 | total loss 4.6190 on validation
+[2022-02-17 21:39:25.258165]: epoch 14
+[2022-02-17 21:40:33.891087]: text ppl 44.9845 | rating loss 0.5660 | total loss 4.3723 on train
+[2022-02-17 21:40:36.086134]: text ppl 53.2097 | rating loss 0.6280 | total loss 4.6023 on validation
+[2022-02-17 21:40:36.395373]: epoch 15
+[2022-02-17 21:41:45.007901]: text ppl 43.3794 | rating loss 0.5652 | total loss 4.3352 on train
+[2022-02-17 21:41:47.221933]: text ppl 52.0237 | rating loss 0.6259 | total loss 4.5776 on validation
+[2022-02-17 21:41:47.536003]: epoch 16
+[2022-02-17 21:42:56.141802]: text ppl 41.9381 | rating loss 0.5649 | total loss 4.3011 on train
+[2022-02-17 21:42:58.335082]: text ppl 51.1902 | rating loss 0.6247 | total loss 4.5602 on validation
+[2022-02-17 21:42:58.647237]: epoch 17
+[2022-02-17 21:44:07.275289]: text ppl 40.6254 | rating loss 0.5644 | total loss 4.2688 on train
+[2022-02-17 21:44:09.467239]: text ppl 50.5227 | rating loss 0.6249 | total loss 4.5474 on validation
+[2022-02-17 21:44:09.779798]: epoch 18
+[2022-02-17 21:45:18.555941]: text ppl 39.4274 | rating loss 0.5638 | total loss 4.2383 on train
+[2022-02-17 21:45:20.742716]: text ppl 49.7854 | rating loss 0.6301 | total loss 4.5378 on validation
+[2022-02-17 21:45:21.044286]: epoch 19
+[2022-02-17 21:46:30.876613]: text ppl 38.3275 | rating loss 0.5630 | total loss 4.2092 on train
+[2022-02-17 21:46:33.072048]: text ppl 49.2816 | rating loss 0.6238 | total loss 4.5213 on validation
+[2022-02-17 21:46:33.374857]: epoch 20
+[2022-02-17 21:47:43.110513]: text ppl 37.2938 | rating loss 0.5631 | total loss 4.1819 on train
+[2022-02-17 21:47:45.306864]: text ppl 48.8533 | rating loss 0.6331 | total loss 4.5219 on validation
+[2022-02-17 21:47:45.306943]: Endured 1 time(s)
+[2022-02-17 21:47:45.306961]: epoch 21
+[2022-02-17 21:48:54.974189]: text ppl 36.3368 | rating loss 0.5624 | total loss 4.1553 on train
+[2022-02-17 21:48:57.175241]: text ppl 48.5355 | rating loss 0.6235 | total loss 4.5058 on validation
+[2022-02-17 21:48:57.485154]: epoch 22
+[2022-02-17 21:50:06.223910]: text ppl 35.4428 | rating loss 0.5616 | total loss 4.1295 on train
+[2022-02-17 21:50:08.423122]: text ppl 48.0621 | rating loss 0.6241 | total loss 4.4966 on validation
+[2022-02-17 21:50:08.736157]: epoch 23
+[2022-02-17 21:51:17.313482]: text ppl 34.5998 | rating loss 0.5614 | total loss 4.1053 on train
+[2022-02-17 21:51:19.499879]: text ppl 47.8423 | rating loss 0.6224 | total loss 4.4903 on validation
+[2022-02-17 21:51:19.814767]: epoch 24
+[2022-02-17 21:52:28.515533]: text ppl 33.7958 | rating loss 0.5611 | total loss 4.0815 on train
+[2022-02-17 21:52:30.709053]: text ppl 47.4834 | rating loss 0.6229 | total loss 4.4833 on validation
+[2022-02-17 21:52:31.029563]: epoch 25
+[2022-02-17 21:53:39.639287]: text ppl 33.0319 | rating loss 0.5605 | total loss 4.0580 on train
+[2022-02-17 21:53:41.834921]: text ppl 47.3229 | rating loss 0.6223 | total loss 4.4793 on validation
+[2022-02-17 21:53:42.153373]: epoch 26
+[2022-02-17 21:54:50.735847]: text ppl 32.3199 | rating loss 0.5601 | total loss 4.0358 on train
+[2022-02-17 21:54:52.935859]: text ppl 47.1769 | rating loss 0.6266 | total loss 4.4805 on validation
+[2022-02-17 21:54:52.935975]: Endured 2 time(s)
+[2022-02-17 21:54:52.935995]: epoch 27
+[2022-02-17 21:56:01.439183]: text ppl 31.6284 | rating loss 0.5598 | total loss 4.0139 on train
+[2022-02-17 21:56:03.630791]: text ppl 47.0558 | rating loss 0.6219 | total loss 4.4733 on validation
+[2022-02-17 21:56:03.955113]: epoch 28
+[2022-02-17 21:57:12.458457]: text ppl 30.9750 | rating loss 0.5597 | total loss 3.9929 on train
+[2022-02-17 21:57:14.660852]: text ppl 47.0925 | rating loss 0.6270 | total loss 4.4791 on validation
+[2022-02-17 21:57:14.660931]: Endured 3 time(s)
+[2022-02-17 21:57:14.660948]: epoch 29
+[2022-02-17 21:58:23.201144]: text ppl 30.3464 | rating loss 0.5592 | total loss 3.9719 on train
+[2022-02-17 21:58:25.402748]: text ppl 46.9596 | rating loss 0.6231 | total loss 4.4724 on validation
+[2022-02-17 21:58:25.713423]: epoch 30
+[2022-02-17 21:59:34.295338]: text ppl 29.7419 | rating loss 0.5587 | total loss 3.9513 on train
+[2022-02-17 21:59:36.484304]: text ppl 46.8741 | rating loss 0.6254 | total loss 4.4729 on validation
+[2022-02-17 21:59:36.484382]: Endured 4 time(s)
+[2022-02-17 21:59:36.484399]: epoch 31
+[2022-02-17 22:00:45.210418]: text ppl 29.1614 | rating loss 0.5588 | total loss 3.9316 on train
+[2022-02-17 22:00:47.415431]: text ppl 46.9165 | rating loss 0.6235 | total loss 4.4718 on validation
+[2022-02-17 22:00:47.727407]: epoch 32
+[2022-02-17 22:01:57.397240]: text ppl 28.6030 | rating loss 0.5582 | total loss 3.9117 on train
+[2022-02-17 22:01:59.592858]: text ppl 47.0413 | rating loss 0.6230 | total loss 4.4741 on validation
+[2022-02-17 22:01:59.592937]: Endured 5 time(s)
+[2022-02-17 22:01:59.592954]: Cannot endure it anymore | Exiting from early stop
+=========================================================================================
+[2022-02-17 22:02:01.879081]: text ppl 46.8056 | rating loss 0.6292 | total loss 4.4752 on test | End of training
+[2022-02-17 22:02:01.879140]: Generating text
+[2022-02-17 22:02:04.830732]: RMSE  0.7932
+[2022-02-17 22:02:04.836952]: MAE  0.6043
+[2022-02-17 22:02:06.309986]: BLEU-1 15.9120
+[2022-02-17 22:02:09.429399]: BLEU-4  1.0645
+[2022-02-17 22:02:20.188258]: USR  0.2171 | USN    6947
+[2022-02-17 22:05:08.783778]: DIV  2.5823
+[2022-02-17 22:05:08.892480]: FCR  0.1437
+[2022-02-17 22:05:08.898892]: FMR  0.0612
+[2022-02-17 22:05:12.055005]: rouge_1/f_score 16.2854
+[2022-02-17 22:05:12.055660]: rouge_1/r_score 16.0053
+[2022-02-17 22:05:12.055728]: rouge_1/p_score 18.6481
+[2022-02-17 22:05:12.055757]: rouge_2/f_score  1.9998
+[2022-02-17 22:05:12.055767]: rouge_2/r_score  2.0708
+[2022-02-17 22:05:12.055776]: rouge_2/p_score  2.2471
+[2022-02-17 22:05:12.055786]: rouge_l/f_score 12.8472
+[2022-02-17 22:05:12.055794]: rouge_l/r_score 14.5078
+[2022-02-17 22:05:12.055803]: rouge_l/p_score 15.4468
+[2022-02-17 22:05:12.084278]: Generated text saved to (./tripadvisor/generated.txt)
